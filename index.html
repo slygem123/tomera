@@ -3,15 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JAQLIV Profile</title>
-    <!-- Stand-in for the original "Angel Wish" display font, which isn't
-         bundled with this repo. Loaded from Google Fonts so the page has
-         a real display font out of the box; the @font-face below still
-         tries assets/Angel_wish.ttf first, so dropping a real file in
-         later will silently take priority without touching any CSS. -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <title>Sakito Profile</title>
     <style>
         * {
             margin: 0;
@@ -269,19 +261,13 @@
         
         @font-face {
             font-family: 'Angel Wish';
-            /* Optional: drop a real Angel_wish.ttf into assets/ to use it —
-               this rule will then silently take priority over the Google
-               Font fallback below with no other changes needed. Until then,
-               a missing file here just fails quietly and the stack falls
-               through to 'Rubik Wet Paint'. */
             src: url('assets/Angel_wish.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
-            font-display: swap;
         }
 
         #profile-name {
-            font-family: 'Angel Wish', 'Rubik Wet Paint', sans-serif;
+            font-family: 'Angel Wish', sans-serif;
             font-size: 32px;
             font-weight: bold;
             letter-spacing: 3px;
